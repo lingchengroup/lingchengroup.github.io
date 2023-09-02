@@ -1,7 +1,7 @@
 # Lingchenteamwebsite
 
-首发在Github，Github负责维护、Issues、Pull Requests、Github.io
+首发在Gitee，Gitee负责维护、Issues、Pull Request
 
-# Gitee更新
+# Github更新
 
-Github更新后，三小时之内同步。
+Gitee更新后，三小时之内同步。
