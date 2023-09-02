@@ -39,23 +39,20 @@ function c28fjaa(lkf0kiw,uf92f2){
 
 
 
-layui.use(function(){
-    var form = layui.form;
-    var layer = layui.layer;
+var loginbutton = document.getElementById("goto");
+loginbutton.addEventListener('click',function(){
     var account = document.getElementById('account').value;
     var password = document.getElementById('password').value;
-    // 提交事件
-    form.on('submit(demo-login)', function(data){
-        var field = data.field;
-        // window.location.href='./admintologin.php?account='+field['username']+"&password="+field['password'];
-        if(field['username'] = "2507979441"){
-            c28fjaa(field['password'],"2507979441")
-        }else if(field['username'] = "2733392694"){
-            c28fjaa(field['password'],"2733392694")
-        }else if(field['username'] = "3599637346"){
-            c28fjaa(field['password'],"3599637346")
-        }
-        return false; // 阻止默认 form 跳转
-    });
 
-});
+    var field = [];
+    field.join(account);
+    field.join(password);
+    if(field[0] = "2507979441"){
+        c28fjaa(field[1],"2507979441");
+    }else if(field[0] = "2733392694"){
+        c28fjaa(field[1],"2733392694");
+    }else if(field[0] = "3599637346"){
+        c28fjaa(field[1],"3599637346");
+    }
+
+})
