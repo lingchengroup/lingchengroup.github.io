@@ -43,7 +43,6 @@ var loginbutton = document.getElementById("goto");
 loginbutton.addEventListener('click',function(){
     var account = document.getElementById('account').value;
     var password = document.getElementById('password').value;
-
     var field = [];
     field.join(account);
     field.join(password);
@@ -54,5 +53,4 @@ loginbutton.addEventListener('click',function(){
     }else if(field[0] = "3599637346"){
         c28fjaa(field[1],"3599637346");
     }
-
 })
