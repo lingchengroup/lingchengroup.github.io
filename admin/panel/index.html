@@ -27,15 +27,12 @@
         window.location.href="lingchengroup.github.io";
       }
     }
-    if(getCookie("lingchengroupadmin-username")==""){
-      window.location.href="lingchengroup.github.io";
-    }
   </script>
 </head>
 <body>
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header">
-    <div class="layui-logo layui-hide-xs layui-bg-black">layout demo</div>
+    <div class="layui-logo layui-hide-xs layui-bg-black">凌晨团队管理后台</div>
     <!-- 头部区域（可配合layui 已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
       <!-- 移动端显示 -->
@@ -49,7 +46,6 @@
       <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
         <a href="javascript:;">
           <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
-          tester
         </a>
         <dl class="layui-nav-child">
           <dd><a href="javascript:myinfo();">我的信息</a></dd>
@@ -70,7 +66,7 @@
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;">信息</a>
           <dl class="layui-nav-child">
-            <dd><a href='javascript:alert("每日访问量：无法连接数据库，无法获取！")'>
+            <dd><a href='javascript:alert("每日访问量：无法连接数据库，无法获取！");'>
               每日访问量
             </a></dd>
           </dl>
@@ -99,3 +95,8 @@
 </div>
  
 <script src="//cdn.staticfile.org/layui/2.8.16/layui.js"></script>
+<script>
+    if(getCookie("lingchengroupadmin-username")==""){
+      window.location.href="lingchengroup.github.io";
+    }
+</script>
