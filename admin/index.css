@@ -31,7 +31,7 @@ body{
 	color: #FFFFFF;
 }
 
-#login-box button{
+.login{
 	line-height:30px;
 	margin-top: 30px;
 	width: 130px;
@@ -43,7 +43,7 @@ body{
 	color: #FFFFFF;
 }
 
-#login-box button:hover{
+.login:hover{
 	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 #login-box .input-box i{
