@@ -76,11 +76,6 @@
  
 <script src="//cdn.staticfile.org/layui/2.8.16/layui.js"></script>
 <script>
-  if(getCookie("lingchengroupadmin-username")==""){
-    window.location.href="lingchengroup.github.io";
-  }
-</script>
-<script>
   function getCookie(name) {  
     const cookieArr = document.cookie.split(";");  
     for (let i = 0; i < cookieArr.length; i++) {  
@@ -99,5 +94,10 @@
     }else{
       window.location.href="lingchengroup.github.io";
     }
+  }
+</script>
+  <script>
+  if(getCookie("lingchengroupadmin-username")==""){
+    window.location.href="lingchengroup.github.io";
   }
 </script>
