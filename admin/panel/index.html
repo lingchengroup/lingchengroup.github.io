@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>凌晨团队管理后台 - PANEL</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//cdn.staticfile.org/layui/2.8.16/css/layui.css" rel="stylesheet">
+  <script>
+  function getCookie(name) {  
+    const cookieArr = document.cookie.split(";");  
+    for (let i = 0; i < cookieArr.length; i++) {  
+        let cookie = cookieArr[i].trim();  
+        if (cookie.startsWith(name + "=")) {  
+            return decodeURIComponent(cookie.substring(name.length + 1, cookie.length));  
+        }  
+    }  
+    return null;  
+  }
+</script>
+  <script>
+    function myinfo(){
+      if(getCookie("lingchengroupadmin-username")!=""){
+        alert("用户名:"+getCookie("lingchengroupadmin-username")+";\n");
+      }else{
+        window.location.href="lingchengroup.github.io";
+      }
+    }
+    if(getCookie("lingchengroupadmin-username")==""){
+      window.location.href="lingchengroup.github.io";
+    }
+  </script>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo layui-hide-xs layui-bg-black">layout demo</div>
+    <!-- 头部区域（可配合layui 已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <!-- 移动端显示 -->
+      <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+        <i class="layui-icon layui-icon-spread-left"></i>
+      </li>
+      <li class="layui-nav-item layui-hide-xs"><a href="javascript:;">首页</a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href="javascript:;">我的信息</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
+        <a href="javascript:;">
+          <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
+          tester
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="javascript:myinfo();">我的信息</a></dd>
+          <dd><a href="javascript:signout();">登出</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+        <a href="javascript:;">
+          <i class="layui-icon layui-icon-more-vertical"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">信息</a>
+          <dl class="layui-nav-child">
+            <dd><a href='javascript:alert("每日访问量：无法连接数据库，无法获取！")'>
+              每日访问量
+            </a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+      <div class="layui-card layui-panel">
+        <div class="layui-card-header">
+          网站信息
+        </div>
+        <div class="layui-card-body">
+          IP:lingchengroup.github.io;
+          每日访问量：无法连接数据库，无法获取!;
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="layui-footer">
+    &copy; Copyright 2023 Lingchengroup 凌晨团队 DKoTechnology 编写
+  </div>
+</div>
+ 
+<script src="//cdn.staticfile.org/layui/2.8.16/layui.js"></script>
