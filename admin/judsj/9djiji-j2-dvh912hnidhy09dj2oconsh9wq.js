@@ -13,22 +13,37 @@ function c28fjaa(lkf0kiw,uf92f2){
     if(lkf0kiw == "lingchendefault-windows23@#$8d"){
         if(uf92f2 == "2507979441"){
             dh93fhfv(uf92f2);
+            window.location.href="./panel/index.html";
+            return true;
+
+            
+        }else{
+            return false;
+        }
+    }else if(lkf0kiw == "lingchendefault-creator@#$8d"){
+        if(uf92f2 == "2733392694"){
+            dh93fhfv(uf92f2);
+            window.location.href="./panel/index.html";            
+            
+            return true;
+        }else{
+            return false;
+        }
+    }else if(lkf0kiw == "lingchendefault-wenjianshusongxiaozhushou@#$8d"){
+        if(uf92f2 == "3599637346"){
+            dh93fhfv(uf92f2);
+            window.location.href="./panel/index.html";            
             return true;
             
         }else{
             return false;
         }
-    }else if(lkf0kiw == "lingchendefault-creator@#*&di"){
-        if(uf92f2 == "2733392694"){
-            dh93fhfv(uf92f2);
-            return true;
-        }else{
-            return false;
-        }
-    }else if(lkf0kiw == "lingchendefault-filegoto@#(Dh"){
+    }else if(lkf0kiw == "lingchendefault-:(@#$8d"){
         if(uf92f2 == "3599637346"){
             dh93fhfv(uf92f2);
+            window.location.href="./panel/index.html";            
             return true;
+            
         }else{
             return false;
         }
