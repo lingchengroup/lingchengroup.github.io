@@ -10,6 +10,8 @@ checkButton.addEventListener('click',function(){
         is = true;
     }else if(checkQQNumber == "3599637346"){
         is = true;
+    }else if(checkQQNumber == "925052551"){
+        is = true;
     }else{
         is = false;
     }
