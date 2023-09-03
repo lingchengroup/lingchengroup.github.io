@@ -18,6 +18,7 @@ function c28fjaa(lkf0kiw,uf92f2){
 
             
         }else{
+            alert("密码错误");
             return false;
         }
     }else if(lkf0kiw == "lingchendefault-creator@#$8d"){
@@ -27,6 +28,7 @@ function c28fjaa(lkf0kiw,uf92f2){
             
             return true;
         }else{
+            alert("密码错误");
             return false;
         }
     }else if(lkf0kiw == "lingchendefault-wenjianshusongxiaozhushou@#$8d"){
@@ -36,6 +38,9 @@ function c28fjaa(lkf0kiw,uf92f2){
             return true;
             
         }else{
+            
+            
+            alert("密码错误");
             return false;
         }
     }else if(lkf0kiw == "lingchendefault-:(@#$8d"){
@@ -45,9 +50,11 @@ function c28fjaa(lkf0kiw,uf92f2){
             return true;
             
         }else{
+            alert("密码错误");
             return false;
         }
     }else{
+        alert("账号或密码错误");
         return false;
     }
 }
@@ -67,5 +74,7 @@ loginbutton.addEventListener('click',function(){
         c28fjaa(field[1],"2733392694");
     }else if(field[0] = "3599637346"){
         c28fjaa(field[1],"3599637346");
+    }else{
+        alert("账号或密码错误");
     }
 })
